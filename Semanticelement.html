@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML semantic elements</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+            line-height:1.6;
+        }
+
+        header{
+            background:#222;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#444;
+            padding:10px;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            justify-content:center;
+            gap:20px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        main{
+            display:flex;
+            gap:20px;
+            padding:20px;
+        }
+
+        section{
+            flex:3;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            border: 2px solid black;
+            border-radius: 15px
+        }
+
+        article{
+            background:#fafafa;
+            padding:15px;
+            margin-bottom:20px;
+            border-left:5px solid #0077ff;
+        }
+
+        aside{
+            grid-area:sidebar;
+            background-color: rgb(255, 244, 223);
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 15px
+        }
+
+        aside ul li{
+            height: 30px;
+            margin: 15px;
+            background-color:#444;
+            color: white;
+            text-decoration: none;
+            display: block;
+            justify-content: center;
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        aside ul li:hover{
+            background-color: red;
+        }
+
+        figure{
+            margin:20px 0;
+            text-align:center;
+        }
+
+        figure img{
+            width:100%;
+            max-width:100px;
+            border-radius:10px;
+        }
+
+        figcaption{
+            margin-top:10px;
+            font-style:italic;
+        }
+
+        details{
+            margin-top:15px;
+            background:#eee;
+            padding:10px;
+            border-radius:5px;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+
+        mark{
+            background:yellow;
+        }
+
+        time{
+            color:#0077ff;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Semantic HTML</h1>
+        <p>All semantic elements</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Latest Articles</h2>
+            <article>
+                <header>
+                    <h3>Introduction to Semantic HTML</h3>
+                    <p>Published on 
+                        <time datetime="2026-05-12">
+                            May 12, 2026
+                        </time>
+                    </p>
+                </header>
+                <p>
+                    Semantic HTML helps structure webpages meaningfully. It improves <mark>SEO</mark> and accessibility.
+                </p>
+                <figure>
+                    <img src="IMG_logo.jpg" alt="Semantic HTML">
+                    <figcaption> Example of semantic structure </figcaption>
+                </figure>
+                <details>
+                    <summary>Read More</summary>
+                    <p>
+                        Semantic tags clearly describe their purpose
+                        to browsers and developers.
+                    </p>
+                </details>
+                <footer>
+                    <p>Written by John Doe</p>
+                </footer>
+            </article>
+            <article>
+                <h3>Benefits of CSS</h3>
+                <p>
+                    CSS makes webpages beautiful and responsive.
+                </p>
+            </article>
+        </section>
+        <aside>
+            <h3>Sidebar</h3>
+            <p>
+                This is additional information related to the page.
+            </p>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2026 Semantic HTML Demo</p>
+    </footer>
+
+</body>
+</html>

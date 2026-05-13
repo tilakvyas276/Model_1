@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#3273cd;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+    }
+
+    .container{
+      width:800px;
+      background:#50b4c8;
+      border:4px solid #4d7c2f;
+      padding:20px;
+    }
+
+    h1{
+      text-align:center;
+      margin-bottom:20px;
+      color:#1d3b0f;
+      font-size:36px;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      background:#1e933b;
+    }
+
+    td{
+      border:2px solid #4d7c2f;
+      padding:10px;
+    }
+
+    label{
+      font-weight:bold;
+      color:#17350d;
+    }
+
+    input,
+    textarea,
+    select{
+      width:100%;
+      padding:8px;
+      border:2px solid #4d7c2f;
+      outline:none;
+      font-size:15px;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus{
+      border-color:#1f4e0f;
+    }
+
+    .gender{
+      display:flex;
+      gap:15px;
+      align-items:center;
+    }
+
+    .gender input{
+      width:auto;
+    }
+
+    .btns{
+      display:flex;
+      gap:10px;
+    }
+
+    button{
+      padding:10px 20px;
+      border:none;
+      background:#1f4e0f;
+      color:white;
+      cursor:pointer;
+      font-size:16px;
+    }
+
+    button:hover{
+      background:#17350d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Registration Form</h1>
+
+    <form>
+
+      <table>
+
+        <tr>
+          <td><label>First Name :</label></td>
+          <td>
+            <input type="text" placeholder="Enter First Name" required>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Last Name :</label></td>
+          <td>
+            <input type="text" placeholder="Enter Last Name" required>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Contact No :</label></td>
+          <td>
+            <input type="tel"
+                   placeholder="Enter Contact Number"
+                   pattern="[0-9]{10}"
+                   required>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Landline No :</label></td>
+          <td>
+            <input type="tel"
+                   placeholder="(079)-123456"
+                   pattern="[0-9]{6,12}">
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Email :</label></td>
+          <td>
+            <input type="email"
+                   placeholder="Enter Your Email ID"
+                   required>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Password :</label></td>
+          <td>
+            <input type="password"
+                   placeholder="Enter Password"
+                   minlength="6"
+                   required>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Date of Birth :</label></td>
+          <td>
+            <input type="date" required>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Age :</label></td>
+          <td>
+            <input type="number"
+                   placeholder="Enter Age"
+                   min="1"
+                   max="100"
+                   required>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Gender :</label></td>
+          <td class="gender">
+            <label><input type="radio" name="gender" required> Male</label>
+
+            <label><input type="radio" name="gender"> Female</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Address :</label></td>
+          <td>
+            <textarea rows="4" required></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>City :</label></td>
+          <td>
+            <select required>
+              <option value="">Select City</option>
+              <option>Ahmedabad</option>
+              <option>Mumbai</option>
+              <option>Rajkot</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Pincode :</label></td>
+          <td>
+            <input type="text"
+                   placeholder="Enter Pincode"
+                   pattern="[0-9]{6}"
+                   required>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Joining Date :</label></td>
+          <td>
+            <input type="date" required>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Confirm Your Form :</label></td>
+          <td class="btns">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </td>
+        </tr>
+
+      </table>
+
+    </form>
+  </div>
+
+</body>
+</html>
