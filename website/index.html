@@ -16,7 +16,7 @@
             <img src="/images/logo (1).png" width="125px">
         </div>
         <nav>
-            <ul>
+            <ul id ="MenuItems">
                 <li><a href="">Home</a></li>
                 <li><a href="">Products</a></li>
                 <li><a href="">About</a></li>
@@ -24,7 +24,8 @@
                 <li><a href="">Account</a></li>
             </ul>
         </nav>
-        <img src="/images/cart.jpg" width="30px" height="30px ">
+        <img src="/images/cart.jpg" width="30px" height="30px">
+        <img src="/images/menu.png" class="menu-icon" onclick ="menutoggle()">
     </div> 
     <div class="row">
         <div class="col-2">
@@ -104,8 +105,8 @@
                 <p>300.00</p>
             </div>
         </div>
-            <h2 class="title">Latest Products</h2>
-            <div class="row">
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
                  <div class="col-4">
                 <img src="/images/product-5.jpg">
                 <h4>Red Printed T-shirt</h4>
@@ -155,7 +156,7 @@
                  </i>   
                 <p>300.00</p>
             </div>
-                </div>
+        </div>
         <div class="row">
                  <div class="col-4">
                 <img src="/images/product-9.jpg">
@@ -168,6 +169,7 @@
                     <i class="fa fa-star-o"></i>
                  </i>
                  <p>50.00</p>
+                <!-- </div> -->
             </div>
             <div class="col-4">
                 <img src="/images/product-10.jpg">
@@ -182,7 +184,7 @@
                 <p>250.00</p>
             </div>
             <div class="col-4">
-                <img src="images/product-11.png">
+                <img src="/images/product-11.png">
                 <h4>Black Shoes</h4>
                  <i class="rating">
                     <i class="fa fa-star"></i>
@@ -193,7 +195,7 @@
                  </i>
                 <p>700.00</p>
              </div>
-            <div class="col-4">
+          <div class="col-4">
                 <img src="/images/product-12.jpg">
                 <h4>Puma Blue T-shirt</h4>
                  <i class="rating">
@@ -205,7 +207,140 @@
                  </i>   
                 <p>300.00</p>
             </div>
+        </div>
+        </div>
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="/images/exclusive.png" class="offer-img">
+                    </div>
+                    <div class="col-2">
+                        <p>Exclusive Available on RedStore</p>
+                        <h1>Smart Band 4 </h1>
+                        <small>Get the latest Smart Band 4 at exclusive prices!</small>
+                        <a href="" class="btn">Buy Now &#8594; </a>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                     <div class="col-3">
+                        <i class="fa-fa-quote-left"></i>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nunc nisl aliquam nisl, eget ultricies nunc nisl eget nunc. </p>
+                        <div class="rating">
+                             <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="images/user-1.png">
+                        <h3>Sean Parker </h3>
+                     </div>
+                      <div class="col-3">
+                        <i class="fa-fa-quote-left"></i>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nunc nisl aliquam nisl, eget ultricies nunc nisl eget nunc. </p>
+                        <div class="rating">
+                             <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="images/user-2.png">
+                        <h3>Mike smith </h3>
+                     </div>
+                      <div class="col-3">
+                        <i class="fa-fa-quote-left"></i>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nunc nisl aliquam nisl, eget ultricies nunc nisl eget nunc. </p>
+                        <div class="rating">
+                             <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="images/user-3.png">
+                        <h3>Mabel Joe  </h3>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="/images/godrej.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="/images/oppp.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="/images/cocacola.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/PayPal.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/philips.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our App</h3>
+                        <p>Download App for Andriod and ios mobile phone</p>
+                        <div class="app-logo">
+                            <img src="/images/img-google-play.png">
+                            <img src="/images/img-app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many</p>    
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="Copyright">Copyright 2026 - Easy Tutorial</p>
+            </div>
+        </div>
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight  = "0px";         
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight  == "0px")
+                {
+                    MenuItems.style.maxHeight  = "200px";
+                }
+        else
+        {
+            MenuItems.style.maxHeight  = "0px";
+        }
+    } 
+        </script>
 </body>
 </html>
